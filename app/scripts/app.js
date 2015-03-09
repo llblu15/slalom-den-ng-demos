@@ -10,5 +10,8 @@ angular
     'ngMaterial',
     'ngLodash',
     'ui.bootstrap'
-  ]);
+  ])
+  .controller('mainCtrl', ['$scope', function ($scope) {
+    
+  }]);
 

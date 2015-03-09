@@ -15,10 +15,18 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="slalom.demo">
-    <div class="container">
-
-    </div>
+  <body ng-app="slalom.demo" ng-controller="mainCtrl">
+<md-toolbar>
+  <h1>My Todo List</h1>
+</md-toolbar>
+<div class="container">
+  <form name="addItem">
+    <md-input-container>
+      <label>Add New Task</label>
+      <md-input class="input-lg" ng-model="newTask.title" ng-required="true"></md-input>
+    </md-input-container>
+  </form>
+</div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
