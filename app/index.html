@@ -20,7 +20,7 @@
   <h1>My Todo List</h1>
 </md-toolbar>
 <div class="container">
-  <form name="addItem">
+  <form name="addItem" ng-keyup="saveTask($event)">
     <md-input-container>
       <label>Add New Task</label>
       <md-input class="input-lg" ng-model="newTask.title" ng-required="true"></md-input>
