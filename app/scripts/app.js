@@ -22,6 +22,6 @@ angular
     };
     $scope.completeItem = function (item) {
       item.complete = !item.complete;
-    }
+    };
   }]);
 
