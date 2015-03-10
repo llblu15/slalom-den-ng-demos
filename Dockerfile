@@ -13,7 +13,7 @@ RUN npm install -g bower grunt-cli
 # Define working directory.
 WORKDIR /data
 
-ADD gruntfile.js /
+ADD Gruntfile.js /
 
 # Define default command.
 CMD ["bash"]
