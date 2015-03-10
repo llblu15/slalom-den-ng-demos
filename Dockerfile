@@ -14,8 +14,6 @@ RUN npm install -g bower grunt-cli
 WORKDIR /Users/marcs/WebstormProjects/slalom-demo-angularv
 
 
-ADD Gruntfile.js /
-
 # Define default command.
 CMD ["bash"]
 
