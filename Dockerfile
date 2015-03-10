@@ -22,7 +22,7 @@ RUN git init
 RUN git pull https://llblu15@github.com/llblu15/slalom-den-ng-demos.git
 
 RUN npm install
- 
-RUN bower install
+
+RUN bower install --allow-root
 
 RUN grunt
