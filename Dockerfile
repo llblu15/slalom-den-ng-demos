@@ -11,11 +11,18 @@ FROM dockerfile/nodejs
 RUN npm install -g bower grunt-cli
 
 # Define working directory.
-WORKDIR /data
+WORKDIR /Users/marcs/WebstormProjects/slalom-demo-angularv
+
 
 ADD Gruntfile.js /
 
 # Define default command.
 CMD ["bash"]
-RUN pwd
+
+RUN git init
+
+RUN git pull https://llblu15@github.com/llblu15/slalom-den-ng-demos.git
+
+RUN npm install && bower install
+
 RUN grunt
