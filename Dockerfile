@@ -16,4 +16,4 @@ WORKDIR /data
 # Define default command.
 CMD ["bash"]
 
-docker run -it --rm dockerfile/nodejs-bower-grunt grunt
+CMD ["bash", "docker run -it --rm dockerfile/nodejs-bower-grunt grunt"]
